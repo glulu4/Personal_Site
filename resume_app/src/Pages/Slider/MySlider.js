@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState, useRef } from 'react';
 import projectCards from '../Slider/Cards'
-import { isMobile } from 'mobile-device-detect';
-// import { isMobile } from 'react-device-detect';
 
 
 import './MySlider.css'
@@ -13,10 +11,10 @@ import './MySlider.css'
 
 function MySlider() {
 
+    // eslint-disable-next-line
     const [width, setWidth] = useState(0);
     const carousel = useRef();
 
-    const _width = window.innerWidth
 
     useEffect( () => {
 
@@ -26,15 +24,7 @@ function MySlider() {
     }, [])
 
 
-    const dragConstraints = !isMobile ? {
-        right: (width + 1200),
-        left: -(width + 1200),
-    } 
-    : 
-    {
-            right: (width + 1700),
-            left: -(width + 1700),
-    }
+
 
 
 

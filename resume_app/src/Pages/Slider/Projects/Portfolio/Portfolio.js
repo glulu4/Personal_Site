@@ -489,7 +489,6 @@ function VmSim() {
 
 export default VmSim;`
     const [selectedFile, setSelectedFile] = useState(appDotJs)
-    const [language, setLanguage] = useState("javascript")
 
 
     const pageStyle = {

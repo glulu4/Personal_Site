@@ -3,17 +3,14 @@ import { Card } from '@mui/material';
 import './Cards.css'
 import Button from '@mui/material/Button';
 
-import Backdrop from '@mui/material/Backdrop';
-import CircularProgress from '@mui/material/CircularProgress';
 
-const projectCards = [];
 
-// const navigate = useNavigate()
+
+
 const cardStyle = {
     width:300,
     height:400,
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
-    // backgroundColor:'#edb5bf'
 }
 const underlineOnHoverStyle = {
     fontFamily: "'Carandache Office Sans', sans-serif",
@@ -71,11 +68,8 @@ const paths = [
 
 ]
 
-// const handleClick = (path) => {
-//     navigate(path)
-// }
-
-projectNames.map((projectName, index) => {
+// eslint-disable-next-line
+const projectCards = projectNames.map((projectName, index) => {
     projectCards.push(
         <Card key={`${projectName}+${index}`} sx={cardStyle}>
             <div className='card-container'>

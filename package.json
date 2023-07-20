@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@chakra-ui/react": "^2.8.0",
-    "framer-motion": "^7.10.3"
+    "@chakra-ui/react": "^2.8.0"
   }
 }
