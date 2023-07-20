@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './Pages/Home/Home.js'
 import { Routes, Route } from 'react-router-dom';
@@ -22,7 +21,6 @@ function App() {
         <Route path="/sorting-algorithms" element={<Sorts />} />
         <Route path="/neighborhood" element={<Neighborhood />} />
         <Route path="/bagels" element={<Bagels />} />
-
         <Route path="/tbd" element={<Tbd />} />
         <Route path="/portfolio" element={<Portfolio />} />
 
