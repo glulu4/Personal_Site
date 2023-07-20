@@ -1,0 +1,33 @@
+.bagelPageDiv {
+    background-color: #A8D0E6;
+}
+
+
+.bagel-desc-div{
+    display:flex;
+    flex-direction:column;
+    padding-top:5%;
+    width:30%;
+}
+
+.bagel-title{
+    padding-top:5%;
+    color:#E85A4F;
+    color:#123c69;
+    color:#3B8BEB;
+    color: #f76c6c;
+    color: #3B8BEB;
+    color:#F76C6C;
+    
+    border-bottom: 2px solid #24305E;
+    width:max-content;
+    font-family:"Manrope";
+    font-size:xx-large;
+}
+
+
+.bagel-description{
+    font-size:x-large;
+    font-family: "Manrope";
+    color:#24305E;
+}

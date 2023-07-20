@@ -1,0 +1,110 @@
+.pageDiv {
+    height: 100vh;
+    background-color: #EAE7DC;
+    display: flex;
+    justify-content: space-around;
+    flex-direction:row;
+    /* gap: 15%; */
+
+}
+
+
+
+
+.code-container {
+    width: 50%;
+    max-height: 90%;
+    overflow-y: scroll;
+    background-color: rgb(29, 31, 33);
+    margin-top: 3%;
+
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(19, 171, 182, 0.2);
+}
+
+
+
+.code-header {
+    display:flex;
+    flex-direction: column;
+    border-bottom: 2px solid whitesmoke;
+    width:inherit;
+    height: 60px;
+    /* display:flex;
+    flex-direction:row;
+    justify-content:space-around; */
+    position: absolute;
+    background-color: inherit;
+    border-radius: inherit;
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius: 0px;
+
+    background-color:inherit;
+
+    
+
+}
+
+
+.filename-box {
+    display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: -moz-fit-content;
+        min-height: 100%;
+        max-width: 100%;
+        overflow-x: scroll;
+        /* width: -webkit-fill-available; */
+        /* align-items: stretch; */
+}
+
+.filename-box .button{
+    flex: 1;
+        /* Added */
+        border-right: 1px solid gray;
+}
+
+.file {
+    color: white;
+}
+
+
+.filename-box :first-child {
+
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.filename-box :last-child {
+
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.button {
+    background-color: inherit;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    min-height: fit-content;
+    min-width: fit-content;
+    font-family: "Manrope";
+    border-radius: 10px;
+        border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+                    border-top-right-radius: 0px;
+                        border-top-left-radius: 0px;
+    text-transform: none;
+    justify-content: center;
+    color: white;
+    border:none;
+
+}
+
+.button:hover {
+    background-color: whitesmoke;
+    color: black;
+}

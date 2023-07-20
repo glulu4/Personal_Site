@@ -1,0 +1,29 @@
+.airline-page-div{
+    background-color: #0F292F;
+    display:flex;
+    justify-content:center;
+}
+
+
+
+.airline-title {
+    padding-top: 5%;
+    color: #CB2D6F;
+    border-bottom: 2px solid #14A098;
+        font-size: 60px;
+        width: max-content;
+    font-family: "Manrope";
+    font-size: xx-large;
+}
+
+
+.airline-desc-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 30%;
+    color: #CCCCCC;
+        font-size: 60px;
+            font-family: "Manrope"
+}
+

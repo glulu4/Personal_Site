@@ -1,0 +1,48 @@
+
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    min-height: 400px;
+    min-width: 300px;
+    /* background-color:lightgrey; */
+    
+}
+
+.buttonStyle {
+    border-radius: 25px;
+    font-family: 'Manrope';
+    font-weight: bold;
+    width: 90px;
+    background-color:rgb(26,26,26)
+
+}
+
+.buttonDiv {
+    /* position:absolute;
+    bottom:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; */
+
+
+    /* height: 100%; */
+
+        align-self: center;
+            bottom: 0;
+            position: absolute;
+            padding-bottom: 7%;
+
+}
+
+
+.project-description{
+        font-family: Manrope;
+            text-align: center;
+            margin: 20px;
+            padding-bottom: 30%;
+            font-size:large;
+}

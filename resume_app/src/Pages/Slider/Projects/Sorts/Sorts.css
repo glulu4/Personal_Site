@@ -1,0 +1,22 @@
+.sort-title{
+    padding-top: 5%;
+        color: #E85A4F;
+        border-bottom: 2px solid #8E8D8A;
+        width: max-content;
+        font-family: "Manrope";
+        font-size: xx-large;
+}
+
+
+.sort-desc-div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    width: 30%
+}
+
+.sort-desc{
+    font-size: x-large;
+    font-family: "Manrope";
+    font-weight:400;
+}
