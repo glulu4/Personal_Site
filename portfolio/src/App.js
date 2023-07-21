@@ -1,6 +1,4 @@
 import './App.css';
-
-
 import Home from './Pages/Home/Home'
 import { Routes, Route } from 'react-router-dom';
 import Bagels from './Pages/Slider/Bagels/Bagels.js';

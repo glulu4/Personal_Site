@@ -3,8 +3,7 @@ import { Card } from '@mui/material';
 import './Cards.css'
 import Button from '@mui/material/Button';
 
-
-
+const publicUrl = process.env.PUBLIC_URL || '';
 
 
 const cardStyle = {
@@ -54,19 +53,20 @@ let projectDescriptions = [
 
 
 // url paths, from App.js
-const paths = [
-    './bagels',
-    './sorting-algorithms',
-    './airline',
-    './vmsim',
-    './neighborhood',
-    './portfolio',
-    './tbd',
-    './tbd',
-    './tbd',
-    './tbd',
 
-]
+const paths = [
+    `${publicUrl}/bagels`,
+    `${publicUrl}/sorting-algorithms`,
+    `${publicUrl}/airline`,
+    `${publicUrl}/vmsim`,
+    `${publicUrl}/neighborhood`,
+    `${publicUrl}/portfolio`,
+    `${publicUrl}/tbd`,
+    `${publicUrl}/tbd`,
+    `${publicUrl}/tbd`,
+    `${publicUrl}/tbd`,
+];
+
 
 // eslint-disable-next-line
 projectNames.map((projectName, index) => {
