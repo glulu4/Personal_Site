@@ -5,8 +5,7 @@ import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
 
-const publicUrl = process.env.PUBLIC_URL || '';
-
+const baseUrl = window.location.origin;
 
 const cardStyle = {
     width: 300,
@@ -57,16 +56,16 @@ let projectDescriptions = [
 // url paths, from App.js
 
 const paths = [
-    `${publicUrl}/bagels`,
-    `${publicUrl}/sorting-algorithms`,
-    `${publicUrl}/airline`,
-    `${publicUrl}/vmsim`,
-    `${publicUrl}/neighborhood`,
-    `${publicUrl}/portfolio`,
-    `${publicUrl}/tbd`,
-    `${publicUrl}/tbd`,
-    `${publicUrl}/tbd`,
-    `${publicUrl}/tbd`,
+    `${baseUrl}/bagels`,
+    `${baseUrl}/sorting-algorithms`,
+    `${baseUrl}/airline`,
+    `${baseUrl}/vmsim`,
+    `${baseUrl}/neighborhood`,
+    `${baseUrl}/portfolio`,
+    `${baseUrl}/tbd`,
+    `${baseUrl}/tbd`,
+    `${baseUrl}/tbd`,
+    `${baseUrl}/tbd`,
 ];
 
 
