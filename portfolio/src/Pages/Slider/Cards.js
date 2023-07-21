@@ -2,6 +2,8 @@ import React from 'react';
 import { Card } from '@mui/material';
 import './Cards.css'
 import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom';
+
 
 const publicUrl = process.env.PUBLIC_URL || '';
 
@@ -80,7 +82,7 @@ projectNames.map((projectName, index) => {
 
                 <div className='buttonDiv'>
                     <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#E16F7C' }} >
-                        <a style={linkStyle} href={paths[index]}>view</a>
+                        <Link to={paths[index]} style={linkStyle}>view</Link>                    
                     </Button>
                 </div>
 
