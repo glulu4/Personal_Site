@@ -1,0 +1,222 @@
+
+
+
+.scroll-page-one {
+    /* background-color:#201e1f; */
+    /* background-color: #292f36; */
+
+    /* background-color:rgb(26, 26, 26); */
+    background-color: #86b3d1;
+    /* background-color: #d8c3a5;
+            background-color: #eae7dc; */
+    /* background-color: #77a6f7; */
+    overflow-y: auto;
+    min-height: 100vh;
+    position: sticky;
+
+
+}
+
+.project-section {
+    /* Adjust this value based on the height of your top section */
+    /* overflow: scroll; */
+    min-height: 120vh;
+    /* Adjust this value based on the height of your top section */
+    /* background-color: whitesmoke;
+    background-color: #a8d0e6; 
+    /* background-image: linear-gradient(#5ca4a9, whitesmoke); */
+    background-color: #323436;
+    background-color: #d18686;
+    background-color: #a6d1cc;
+    background-color: #edb5bf;
+    /* i like, not for this tho */
+
+
+    background-color: #a16e83;
+    /* i like */
+    background-color: #8e8268;
+    background-color: #99ced3;
+    background-color: #B0C4DE;
+
+    /* background-color: #eae7dc;
+            background-color: #d8c3a5; */
+
+
+
+
+    /* background-color: #292F36; */
+    /* background-color: rgb(26, 26, 26); */
+
+}
+
+.project-title-section {
+    margin-top: 5%;
+    font-size: 100px;
+    font-family: "Carandache Office Sans", sans-serif;
+    font-weight: 400;
+    margin-left: 3%;
+    display: flex;
+    align-items: flex-start;
+    max-width: max-content;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(92, 91, 91);
+
+}
+
+.about {
+    border-bottom: 1px solid black;
+    max-width: fit-content;
+    font-family: Manrope;
+
+
+}
+
+.content-section {
+    min-height: 100vh;
+    background-color: #ECECEC;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    /* margin-left:-3%; */
+    /* padding-right:5%; */
+    margin-top: 7%;
+    width: 30%;
+}
+
+.contact {
+    margin-top: 7%;
+
+}
+
+
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.slider-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10%;
+    overflow: hidden;
+    /* overflow-x: scroll; */
+    max-width: fit-content;
+
+}
+
+
+
+
+.name {
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    font-family: "Carandache Office Sans", sans-serif;
+    font-weight: 400;
+    position: relative;
+    text-align: center;
+    /* color:#E85A4F; */
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+
+
+}
+
+/* 3b8beb */
+
+
+
+.neon {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #00d5ff,
+        0 0 80px #00d5ff,
+        0 0 90px #00d5ff,
+        0 0 100px #00d5ff,
+        0 0 150px #00d5ff;
+
+}
+
+/* f8e9a1 */
+.neon2 {
+    color: #fff;
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #fff,
+        0 0 40px #f8a1f8,
+        0 0 80px #f8a1f8,
+        0 0 90px #f8a1f8,
+        0 0 100px #f8a1f8,
+        0 0 150px #f8a1f8;
+
+}
+
+
+.button-container {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+
+}
+
+.other-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.link {
+    position: relative;
+    width: fit-content;
+    font-family: Manrope;
+    font-weight: bold;
+}
+
+.hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FC9F5B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.email-success {
+    animation: fade-in 1s ease-in-out;
+}
+
+tr>*+* {
+    padding-left: 3em;
+}
+
+
+.job-title {
+    font-weight: bold;
+    color: #323436;
+}
