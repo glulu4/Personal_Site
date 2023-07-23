@@ -207,7 +207,7 @@ function Home() {
         <div className='home-container'>
             <div className='scroll-page-one'>
 
-                <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row', marginBottom: '2%' }}>
+                <div className='name-div'>
                     <h1 className="name">
                         Gabb<motion.div
                             animate={controls}
@@ -426,22 +426,20 @@ function Home() {
 
                 <div className='contact'>
                     <h1 className='about'>Contact</h1>
-                    <div style={{
-                        width: 'inherit',
-                        display: 'flex',
-                        paddingBottom: '10%',
-                        gap: '2px',
-                    }}>
-                        <div style={{ display: 'flex', flexDirection: 'column' }}>
-                            <Textarea color={nameColor} onChange={handleNameChange} value={name} placeholder="Name"></Textarea>
-                            <FormHelperText style={{ color: '#d32f2f', paddingLeft: '2%' }}>{nameError}</FormHelperText>
+                    <div className='contact-form-div'>
+                        <div className='name-email-div'>
+                            <div className='name-textarea' >
+                                <Textarea color={nameColor} onChange={handleNameChange} value={name} placeholder="Name"></Textarea>
+                                <FormHelperText style={{ color: '#d32f2f', paddingLeft: '2%' }}>{nameError}</FormHelperText>
+                            </div>
+
+                            <div className='email-textarea'>
+                                <Textarea color={emailColor} value={email} onChange={handleEmailChange} placeholder="Email"></Textarea>
+                                <FormHelperText style={{ color: '#d32f2f', paddingLeft: '2%' }} >{emailError}</FormHelperText>
+
+                            </div>  
                         </div>
 
-                        <div style={{ display: 'flex', flexDirection: 'column' }}>
-                            <Textarea color={emailColor} value={email} onChange={handleEmailChange} placeholder="Email"></Textarea>
-                            <FormHelperText style={{ color: '#d32f2f', paddingLeft: '2%' }} >{emailError}</FormHelperText>
-
-                        </div>
 
                     </div>
 

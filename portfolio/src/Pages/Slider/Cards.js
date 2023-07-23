@@ -25,7 +25,7 @@ const underlineOnHoverStyle = {
 
 const linkStyle = {
     textDecoration: 'none',
-    color: 'inherit',
+    color: 'black',
     ':hover': {
         textDecoration: 'none',
     },
@@ -80,7 +80,7 @@ projectNames.map((projectName, index) => {
                 <p className='project-description'> {projectDescriptions[index]} </p>
 
                 <div className='buttonDiv'>
-                    <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#E16F7C' }} >
+                    <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF' }} >
                         <Link to={paths[index]} style={linkStyle}>view</Link>                    
                     </Button>
                 </div>

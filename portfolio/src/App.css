@@ -2,3 +2,13 @@ html {
   margin: 0;
   scroll-behavior: smooth;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #77a6f7, #b0c4de, #ececec);
+}
+
+
+
+/* 5ea4e2, dodgerblue */
