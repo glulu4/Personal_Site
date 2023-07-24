@@ -108,3 +108,34 @@
     background-color: whitesmoke;
     color: black;
 }
+
+
+@media (max-width: 768px) { 
+    .code-container {
+        margin:3%;
+            width: 90%;
+            max-height: 90%;
+            overflow-y: scroll;
+            background-color: rgb(29, 31, 33);
+            margin-top: 3%;
+    
+            border-style: solid;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(19, 171, 182, 0.2);
+        }
+
+    .pageDiv {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        
+    }
+
+    .sort-title{
+        max-width: fit-content;
+        overflow: auto;
+    }
+
+
+}

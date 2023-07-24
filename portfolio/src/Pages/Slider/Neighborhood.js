@@ -8,7 +8,7 @@ function Neighborhood() {
 
     const titleStyle = {
         color: '#B4DFE5',
-        fontSize: '60px',
+        // fontSize: '60px',
         borderBottom: '2px solid #00887A',
         width: 'fit-content'
 
@@ -23,7 +23,7 @@ function Neighborhood() {
 
 
             <div className='sort-desc-div'>
-                <h1 style={titleStyle}  className='sort-title'>Pittsburgh Neighborhood <br/> Analysis</h1>
+                <h1 style={titleStyle}  className='sort-title neighborhood-title'>Pittsburgh Neighborhood <br/> Analysis</h1>
                 <p style={descriptionStyle} className='sort-desc'>
                     For silly University reasons, I cannot display the code to this project due to the possibility of
                     other students discovering and copying the project. However, it's available upon request.

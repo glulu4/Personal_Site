@@ -1169,7 +1169,7 @@ reportWebVitals();
 
 
     return(
-        <div className='pageDiv bagelPageDiv'>
+        <div className='bagelPageDiv'>
 
 
         <div className='bagel-desc-div desc-div'>

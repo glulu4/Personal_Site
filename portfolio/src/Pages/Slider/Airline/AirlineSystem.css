@@ -27,3 +27,43 @@
             font-family: "Manrope"
 }
 
+
+@media (max-width: 768px) {
+    .airline-desc-div {
+            display: flex;
+            flex-direction: column;
+            margin: 5%;
+            width: 80%;
+            /* padding-top: 5%; */
+            color: #CCCCCC;
+            font-size: 60px;
+            font-family: "Manrope"
+        }
+
+
+
+
+    .pageDiv {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        /* height: auto; */
+
+    }
+
+    .airline-title{
+                max-width: fit-content;
+                    overflow: auto;
+    }
+
+        .airline-desc-div {
+            display: flex;
+            flex-direction: column;
+            color: #CCCCCC;
+            font-size: 60px;
+            font-family: "Manrope"
+        }
+
+
+}
+

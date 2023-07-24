@@ -3,15 +3,25 @@ import { Card } from '@mui/material';
 import './Cards.css'
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import { isMobile } from 'react-device-detect';
+
 
 
 const baseUrl = window.location.origin;
+let cardStyle = {}
 
-const cardStyle = {
+isMobile ? cardStyle = {
+    // if we are on mobile
+    width: 300,
+    height: 300,
+    boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
+} : cardStyle = {
     width: 300,
     height: 400,
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
 }
+
+
 const underlineOnHoverStyle = {
     fontFamily: "'Carandache Office Sans', sans-serif",
     fontWeight: 500,
@@ -26,10 +36,11 @@ const underlineOnHoverStyle = {
 const linkStyle = {
     textDecoration: 'none',
     color: 'black',
+
     ':hover': {
         textDecoration: 'none',
     },
-    fontFamily: "'Carandache Office Sans', sans-serif",
+    fontFamily: "Manrope",
 }
 
 
@@ -72,6 +83,7 @@ const paths = [
 // eslint-disable-next-line
 projectNames.map((projectName, index) => {
     projectCards.push(
+        <Link to={paths[index]} style={linkStyle}>
         <Card key={`${projectName}+${index}`} sx={cardStyle}>
             <div className='card-container'>
 
@@ -80,14 +92,16 @@ projectNames.map((projectName, index) => {
                 <p className='project-description'> {projectDescriptions[index]} </p>
 
                 <div className='buttonDiv'>
-                    <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF' }} >
-                        <Link to={paths[index]} style={linkStyle}>view</Link>                    
-                    </Button>
+                {!isMobile && <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF' }} >
+                    <Link to={paths[index]} style={linkStyle}>view</Link>
+                </Button>}
+
                 </div>
 
             </div>
 
         </Card>
+        </Link >  
     );
 
 })

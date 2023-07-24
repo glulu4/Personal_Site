@@ -547,7 +547,7 @@ public class MergeSort
 
 
     return (
-        <div className='pageDiv'>
+      <div className='sortPageDiv'>
 
 
 

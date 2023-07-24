@@ -7,6 +7,18 @@
         font-size: xx-large;
 }
 
+.sortPageDiv{
+        height: 100vh;
+            background-color: #EAE7DC;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row;
+}
+
+
+.neighborhood-title {
+    font-size: 60px;
+}
 
 .sort-desc-div{
     display: flex;
@@ -19,4 +31,36 @@
     font-size: x-large;
     font-family: "Manrope";
     font-weight:400;
+}
+
+
+@media (max-width: 768px) {
+    .sort-desc-div {
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        width: 80%;
+    }
+
+
+
+    .sort-title {
+        color: #E85A4F;
+
+        border-bottom: 2px solid #8E8D8A;        
+        max-width: fit-content;
+        overflow: auto;
+        font-family: "Manrope";
+        font-size: xx-large;
+    }
+
+        .neighborhood-title{
+            font-size:50px;
+        }
+
+        .sortPageDiv{
+                    display: flex;
+                        flex-direction: column;
+                        height: auto;
+        }
 }

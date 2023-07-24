@@ -499,6 +499,8 @@ export default VmSim;`
     const titleStyle = {
         color: '#ffffff',
         borderBottom: '2px solid black',
+        maxWidth:'fit-content',
+        fontSize:'50px',
     }
 
     const descriptionStyle = {
@@ -506,7 +508,7 @@ export default VmSim;`
 
 
     return (
-        <div style={pageStyle} className='pageDiv'>
+        <div style={pageStyle} className='sortPageDiv'>
 
 
 
