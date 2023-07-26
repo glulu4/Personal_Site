@@ -4,6 +4,8 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Button } from '@mui/material';
 import './Sorts.css'
+import { IconButton } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
 function Sorts() {
@@ -548,6 +550,11 @@ public class MergeSort
 
     return (
       <div className='sortPageDiv'>
+        <IconButton style={{ position: 'absolute', top: '0', left: '0', margin: '1%', colo: "black" }}
+          onClick={() => { window.history.back(); }}
+        >
+          <ArrowBackIcon></ArrowBackIcon>
+        </IconButton>
 
 
 

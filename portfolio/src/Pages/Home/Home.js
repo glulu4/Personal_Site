@@ -26,6 +26,7 @@ import DialogTitle from '@mui/material/DialogTitle';
 
 
 import './Home.css'
+import { isMobile } from 'react-device-detect';
 
 
 function Home() {
@@ -44,6 +45,8 @@ function Home() {
         color: 'inherit',
         width: 'fit-content'
     }
+
+    const fontSize = isMobile ? '70px' : '100px'
 
 
     const [name, setName] = useState("")
@@ -208,7 +211,7 @@ function Home() {
             <div className='scroll-page-one'>
 
                 <div className='name-div'>
-                    <h1 className="name">
+                    <h1 style={{ fontSize: fontSize }} className="name">
                         Gabb<motion.div
                             animate={controls}
 
@@ -218,7 +221,10 @@ function Home() {
 
 
             </div>
+            
             <div className='project-section'>
+                {isMobile && <><br /><br /> </>}
+
                 <h1 className='project-title-section'>Project   <motion.div
                     animate={{
                         x: 2,

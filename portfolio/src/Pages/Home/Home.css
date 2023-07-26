@@ -25,36 +25,11 @@
     margin-bottom: 2%;
 }
 .project-section {
-    /* Adjust this value based on the height of your top section */
-    /* overflow: scroll; */
-    min-height: 120vh;
-    /* Adjust this value based on the height of your top section */
-    /* background-color: whitesmoke;
-    background-color: #a8d0e6; 
-    /* background-image: linear-gradient(#5ca4a9, whitesmoke); */
-    /* background-color: #323436;
-    background-color: #d18686;
-    background-color: #a6d1cc;
-    background-color: #edb5bf; */
-    /* i like, not for this tho */
+
+    min-height: 100vh;
+
 
     background-color: #a8d0e6;
-
-    /* background-color: #a16e83; */
-    /* i like */
-    /* background-color: #8e8268;
-    background-color: #99ced3;
-    background-color: #B0C4DE;
-    background: linear-gradient(to bottom, #86b3d1, #b0c4de, #ececec); */
-
-    /* background-color: #eae7dc;
-            background-color: #d8c3a5; */
-
-
-
-
-    /* background-color: #292F36; */
-    /* background-color: rgb(26, 26, 26); */
 
 }
 

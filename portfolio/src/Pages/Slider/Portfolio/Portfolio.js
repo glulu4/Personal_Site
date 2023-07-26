@@ -3,6 +3,8 @@ import '../ProjStyle.css'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Button } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { IconButton } from '@mui/material';
 
 
 
@@ -509,6 +511,11 @@ export default VmSim;`
 
     return (
         <div style={pageStyle} className='sortPageDiv'>
+            <IconButton style={{ position: 'absolute', top: '0', left: '0', margin: '1%', colo: "black" }}
+                onClick={() => { window.history.back(); }}
+            >
+                <ArrowBackIcon></ArrowBackIcon>
+            </IconButton>
 
 
 
@@ -522,6 +529,8 @@ export default VmSim;`
                     React knowledge and skills. All animations on this website were 
                     developed with the React Framer Motion library. I plan on adding 
                     a 3D model to the homepage soon (written on July 19, 2023).
+                    <br/>
+                    All the code can be found on my github, glulu4 ( linked on homepage).
                 </p>
 
             </div>

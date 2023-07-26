@@ -13,7 +13,7 @@ let cardStyle = {}
 isMobile ? cardStyle = {
     // if we are on mobile
     width: 300,
-    height: 300,
+    height: 400,
     boxShadow: '0 4px 10px rgba(0, 0, 0, 0.2)',
 } : cardStyle = {
     width: 300,
@@ -95,9 +95,9 @@ projectNames.map((projectName, index) => {
                 <p className='project-description'> {projectDescriptions[index]} </p>
 
                 <div className='buttonDiv'>
-                {!isMobile && <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF' }} >
+                <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF' }} >
                     <Link to={paths[index]} style={linkStyle}>view</Link>
-                </Button>}
+                </Button>
 
                 </div>
 

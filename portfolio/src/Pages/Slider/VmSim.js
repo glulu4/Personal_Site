@@ -1,4 +1,6 @@
 import React from 'react';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { IconButton } from '@mui/material';
 
 
 function VmSim() {
@@ -20,7 +22,11 @@ function VmSim() {
 
     return (
         <div style={pageStyle} className='pageDiv'>
-
+            <IconButton style={{ position: 'absolute', top: '0', left: '0', margin: '1%', colo: "black" }}
+                onClick={() => { window.history.back(); }}
+            >
+                <ArrowBackIcon></ArrowBackIcon>
+            </IconButton>
 
 
             <div className='sort-desc-div'>

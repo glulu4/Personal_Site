@@ -6,6 +6,7 @@ import { atomDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Button } from '@mui/material';
 import LaunchIcon from '@mui/icons-material/Launch';
 import { IconButton } from '@mui/material';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 
 
@@ -1160,6 +1161,8 @@ reportWebVitals();
     
     const [selectedFile, setSelectedFile] = useState(bagel_dot_py)
     const [language, setLanguage] = useState("python")
+
+
     
 
 
@@ -1171,14 +1174,27 @@ reportWebVitals();
     return(
         <div className='bagelPageDiv'>
 
+            <IconButton style={{position:'absolute', top:'0', left:'0', margin:'1%', color:"black"}} 
+                onClick={() => { window.history.back(); }}
+            >
+                <ArrowBackIcon></ArrowBackIcon>
+            </IconButton>
+
 
         <div className='bagel-desc-div desc-div'>
                 <h1 className='bagel-title'>Shmuel's Monday Bagels <IconButton href='https://shmuelsmondaybagels.com/' target="_blank"><LaunchIcon style={{ color:'#E85A4F'}} /></IconButton></h1>
 
                 <p className='bagel-description desc-div'>
-                    Shmuel's Monday Bagels is a professional website for a local bakery based in Pittsburgh. 
-                    This website uses React for the frontend and Flask for the backend. Moreover, ThreeJs, the Stripe API, and Yagmail, are used to
-                    add the 3D bagel, the payment page, and emailing the weekly orders to the owner, respectively. 
+                    Shmuel's Monday Bagels is a professional website for a local 
+                    bakery based in Pittsburgh. 
+                    This website uses React for the 
+                    frontend and Flask for the backend. 
+                    Moreover, ThreeJs, the Stripe API, and Yagmail, are used to
+                    add the 3D bagel, the payment page, and 
+                    emailing the weekly orders to the owner, 
+                    respectively. 
+                    <br />
+                    All the code can be found on my github, glulu4 ( linked on homepage).
                 </p>
 
                 <br/>

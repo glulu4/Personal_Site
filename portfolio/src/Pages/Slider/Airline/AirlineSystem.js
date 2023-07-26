@@ -2,10 +2,17 @@ import React from 'react';
 
 import '../ProjStyle.css'
 import './AirlineSystem.css'
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { IconButton } from '@mui/material';
 
 function AirlineSystem() {
     return (
         <div className='pageDiv airline-page-div'>
+            <IconButton style={{ position: 'absolute', top: '0', left: '0', margin: '1%', color: "white" }}
+                onClick={() => { window.history.back(); }}
+            >
+                <ArrowBackIcon></ArrowBackIcon>
+            </IconButton>
 
 
 
