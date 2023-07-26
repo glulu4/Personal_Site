@@ -227,6 +227,7 @@ function Home() {
                         rotate: 20,
                     }}
                 >s</motion.div></h1>
+                
 
                 <div className='slider-container'>
                     <MySlider />

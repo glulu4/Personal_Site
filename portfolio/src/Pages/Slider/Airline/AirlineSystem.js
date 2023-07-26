@@ -12,7 +12,7 @@ function AirlineSystem() {
             <div className='airline-desc-div'>
                 <h1 style={{fontSize:'60px'}} className='airline-title'>Airline System</h1>
                 <p className='sort-desc'>
-                    For silly University reasons, I cannot display the code to this project due to the possibility of 
+                    For silly University reasons, I cannot display the code for this project due to the possibility of 
                     other students discovering and copying the project. However, it's available upon request.
                 </p>
 

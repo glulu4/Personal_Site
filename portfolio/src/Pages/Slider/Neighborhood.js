@@ -25,8 +25,10 @@ function Neighborhood() {
             <div className='sort-desc-div'>
                 <h1 style={titleStyle}  className='sort-title neighborhood-title'>Pittsburgh Neighborhood <br/> Analysis</h1>
                 <p style={descriptionStyle} className='sort-desc'>
-                    For silly University reasons, I cannot display the code to this project due to the possibility of
-                    other students discovering and copying the project. However, it's available upon request.
+                    For silly University reasons, I cannot display the code for 
+                    this project due to the possibility of
+                    other students discovering and copying the project. 
+                    However, it's available upon request.
                 </p>
 
             </div>

@@ -513,11 +513,15 @@ export default VmSim;`
 
 
             <div className='sort-desc-div'>
-                <h1 style={titleStyle} className='sort-title'>Porfolio Website</h1>
+                <h1 style={titleStyle} className='sort-title'>Portfolio Website</h1>
                 <p style={descriptionStyle} className='sort-desc'>
-                    Some code snippets from the site you're visiting ( the rest is on my github )! I wanted to make this portfolio for two main reasons. 
-                    One, to  showcase some of my projects in another setting, other than my resume. Two, to further develop my React knowledge and skills.
-                    All animations on this website were developed with the React Framer Motion library. I plan on adding a 3D model to the homepage soon (written on July 19th, 2023)
+                    Some code snippets from the site you are visiting 
+                    (the rest is on my GitHub)! I wanted to make this portfolio 
+                    for two main reasons. One, to showcase some of my projects in 
+                    a different context from my resume. Two, to further develop my 
+                    React knowledge and skills. All animations on this website were 
+                    developed with the React Framer Motion library. I plan on adding 
+                    a 3D model to the homepage soon (written on July 19, 2023).
                 </p>
 
             </div>

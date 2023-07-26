@@ -26,7 +26,7 @@ function VmSim() {
             <div className='sort-desc-div'>
                 <h1 style={titleStyle} className='sort-title'>Virtual Memory <br/>Simulator</h1>
                 <p style={descriptionStyle} className='sort-desc'>
-                    For silly University reasons, I cannot display the code to this project due to the possibility of
+                    For silly University reasons, I cannot display the code for this project due to the possibility of
                     other students discovering and copying the project. However, it's available upon request.
                     <br/>
                 </p>

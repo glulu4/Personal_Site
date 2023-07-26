@@ -23,8 +23,10 @@ isMobile ? cardStyle = {
 
 
 const underlineOnHoverStyle = {
-    fontFamily: "'Carandache Office Sans', sans-serif",
-    fontWeight: 500,
+    // fontFamily: "'Carandache Office Sans', sans-serif",
+    fontFamily: "Manrope",
+
+    fontWeight: 700,
     textAlign: 'center',
     margin: 30,
     textDecoration: 'none',
@@ -41,6 +43,7 @@ const linkStyle = {
         textDecoration: 'none',
     },
     fontFamily: "Manrope",
+    fontWeight:500,
 }
 
 
