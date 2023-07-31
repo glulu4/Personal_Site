@@ -95,8 +95,8 @@ projectNames.map((projectName, index) => {
                 <p className='project-description'> {projectDescriptions[index]} </p>
 
                 <div className='buttonDiv'>
-                <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF' }} >
-                    <Link to={paths[index]} style={linkStyle}>view</Link>
+                <Button variant="contained" className='buttonStyle' style={{ borderRadius: '50px', backgroundColor: '#EEF8FF', color:'black' }} >
+                        view
                 </Button>
 
                 </div>

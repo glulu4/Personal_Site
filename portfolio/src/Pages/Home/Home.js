@@ -19,14 +19,16 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 
 
-
-
-
-
-
-
 import './Home.css'
 import { isMobile } from 'react-device-detect';
+// import { json } from 'react-router-dom';
+
+import ModelCanvas from './ModelCanvas';
+
+
+
+
+
 
 
 function Home() {
@@ -146,7 +148,7 @@ function Home() {
         }
 
 
-        // reset everything and 
+        // reset everything and
         setSuccessMsg("Your message was sent!")
         setEmailColor("neutral")
         setMsgColor("neutral")
@@ -194,7 +196,7 @@ function Home() {
     useEffect(() => {
         startSwingAnimation();
 
-    },); // Runs the animation when the component mounts
+    });
 
     const descriptionElementRef = React.useRef(null);
     useEffect(() => {
@@ -210,18 +212,45 @@ function Home() {
         <div className='home-container'>
             <div className='scroll-page-one'>
 
-                <div className='name-div'>
-                    <h1 style={{ fontSize: fontSize }} className="name">
-                        Gabb<motion.div
-                            animate={controls}
+          
 
-                        >y </motion.div> <br />Lulu
-                    </h1>
+
+
+                <div className='name-page-container'>
+                        <div className='name-div'>
+                            <h1 style={{ fontSize: fontSize }} className="name">
+                                Gabb<motion.div
+                                    animate={controls}
+                                    style={{textDecoration:'none'}}
+
+                                >y </motion.div> <br />Lulu
+                            </h1>
+                        </div>
+
+
+                    <div>
+
+                    </div>
+                    <div style={{display:'flex', flexDirection:'row', width:'100%'}}>
+                        <div className='model-container'>
+                             {/* // eslint-disable-next-line */}
+                           <ModelCanvas />
+                        </div>
+                        <div className='empty-space'>
+                            {/* <h1>ihjnw</h1> */}
+                        </div>
+                    </div>
+
+
+
                 </div>
 
 
+
+
+
             </div>
-            
+
             <div className='project-section'>
                 {isMobile && <><br /><br /> </>}
 
@@ -233,7 +262,7 @@ function Home() {
                         rotate: 20,
                     }}
                 >s</motion.div></h1>
-                
+
 
                 <div className='slider-container'>
                     <MySlider />
@@ -444,7 +473,7 @@ function Home() {
                                 <Textarea color={emailColor} value={email} onChange={handleEmailChange} placeholder="Email"></Textarea>
                                 <FormHelperText style={{ color: '#d32f2f', paddingLeft: '2%' }} >{emailError}</FormHelperText>
 
-                            </div>  
+                            </div>
                         </div>
 
 
