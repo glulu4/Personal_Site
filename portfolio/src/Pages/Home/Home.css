@@ -12,7 +12,7 @@
     background-color: #77a6f7;
 
     /* background-image: linear-gradient(to bottom, #86b3d1, #b0c4de, #ececec); */
-    overflow-y: auto;
+    overflow-y:visible;
     height: 100vh;
     position: sticky;
 }
@@ -258,15 +258,31 @@ tr>*+* {
 
 }
 
+.model-container-container{
+    display:flex;
+    flex-direction:row;
+    width:100%
+}
+
 
 
 @media (max-width: 768px) {
 
+
+
+    .model-container-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%
+        }
+
     .name-div {
         display: flex;
         justify-content: center;
-        flex-direction: row;
-        margin-bottom: 2%;
+        flex-direction: column;
+        margin: 2%;
+        /* margin-left: 20%; */
+        margin-bottom: 60%;
 
     }
 

@@ -1,17 +1,34 @@
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useGLTF } from "@react-three/drei";
+import { Html } from "@react-three/drei"
 
-export default function Statue(props) {
-    const { nodes, materials } = useGLTF("/statue.glb", "", (progress )=> {
-        // hasnt loaded yet
-        if (progress !== 1){
-            return <div>Loading...</div>
+
+export default function Model(props) {
+    const [modelLoaded, setModelLoaded] = useState(false);
+
+    const { nodes, materials } = useGLTF("/statue.glb")
+    const gradientStyle = {
+        background: 'linear-gradient(45deg, #ff00cc, #3333ff)',
+        WebkitBackgroundClip: 'text',
+        backgroundClip: 'text',
+        color: 'transparent', 
+        paddingBottom:'20%',
+    };
+
+
+    useEffect(() => {
+        if (nodes && materials) {
+            setModelLoaded(true);
         }
-        else{
-            return <div>LOADED</div>
-        }
-    });
+    }, [nodes, materials]);
+
+    // Show a loading message if the model is not loaded yet !modelLoaded
+    if (!modelLoaded ) {
+        return <Html>
+            <h1 style={gradientStyle}>Loading...</h1>
+        </Html>
+    }
     
     return (
         <group {...props} dispose={null}>

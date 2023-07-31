@@ -47,6 +47,16 @@ function Home() {
         color: 'inherit',
         width: 'fit-content'
     }
+    const gradientStyle = {
+        background: 'linear-gradient(45deg, #ff00cc, #3333ff)',
+        WebkitBackgroundClip: 'text',
+        backgroundClip: 'text',
+        color: 'transparent',
+        textAlign:'center',
+        paddingTop:'30%',
+
+
+    };
 
     const fontSize = isMobile ? '70px' : '100px'
 
@@ -225,20 +235,28 @@ function Home() {
 
                                 >y </motion.div> <br />Lulu
                             </h1>
+                        {isMobile && <h3 style={gradientStyle}>3D model... <br/>desktop only</h3>}
+
                         </div>
 
 
                     <div>
 
                     </div>
-                    <div style={{display:'flex', flexDirection:'row', width:'100%'}}>
+                    
+                    <div className="model-container-container" >
+                        
                         <div className='model-container'>
                              {/* // eslint-disable-next-line */}
-                           <ModelCanvas />
+                            {!isMobile && <ModelCanvas /> }
+
                         </div>
+                        
                         <div className='empty-space'>
+
                             {/* <h1>ihjnw</h1> */}
                         </div>
+
                     </div>
 
 
