@@ -8,6 +8,7 @@ import VmSim from './Pages/Slider/VmSim';
 import AirlineSystem from './Pages/Slider/Airline/AirlineSystem';
 import Tbd from './Pages/Slider/Tbd.js'
 import Portfolio from './Pages/Slider/Portfolio/Portfolio';
+import DbManager from './Pages/Slider/DbManager/DbManager'
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       <Route path="/bagels" element={<Bagels />} />
       <Route path="/tbd" element={<Tbd />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/DatabaseManager" element={<DbManager />} />
+
 
 
     </Routes>

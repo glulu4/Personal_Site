@@ -50,7 +50,7 @@ const linkStyle = {
 
 const projectCards = []
 
-let projectNames = ["Sam's Monday Bagels", "Sorting Algorithms", "Airline System", "Virtual Memory Simulator", "Neighborhood Analysis", "This Site!", "TBD", "TBD", "TBD", "TBD",]
+let projectNames = ["Sam's Monday Bagels", "Sorting Algorithms", "Airline System", "Virtual Memory Simulator", "Neighborhood Analysis", "This Site!", "Database Manager", "TBD", "TBD", "TBD",]
 
 let projectDescriptions = [
     "Professional Bagel Webiste, designed for weekly orders",
@@ -59,7 +59,7 @@ let projectDescriptions = [
     "A virtual memory simulation",
     "Python Program that determines the best Pittsburgh neighborhood",
     "Simple yet elegant portfolio for Gabby Lulu",
-    "...",
+    "Database manager for Sam's Bagels",
     "...",
     "...",
     "..."
@@ -76,7 +76,7 @@ const paths = [
     `${baseUrl}/vmsim`,
     `${baseUrl}/neighborhood`,
     `${baseUrl}/portfolio`,
-    `${baseUrl}/tbd`,
+    `${baseUrl}/DatabaseManager`,
     `${baseUrl}/tbd`,
     `${baseUrl}/tbd`,
     `${baseUrl}/tbd`,

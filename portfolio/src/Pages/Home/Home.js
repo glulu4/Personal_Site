@@ -74,6 +74,9 @@ function Home() {
     const [successMsg, setSuccessMsg] = useState('')
     const [open, setOpen] = React.useState(false);
 
+    const [rerender, setRerender] = useState(false);
+
+
 
     const handleNameChange = (event) => {
         event.preventDefault();
@@ -87,6 +90,7 @@ function Home() {
         event.preventDefault();
         setMessage(event.target.value)
     }
+    
 
 
 
@@ -218,6 +222,11 @@ function Home() {
         }
     }, [open]);
 
+    useEffect(() => {
+
+        setRerender(true);
+    }, []);
+
     return (
         <div className='home-container'>
             <div className='scroll-page-one'>
@@ -248,7 +257,7 @@ function Home() {
                         
                         <div className='model-container'>
                              {/* // eslint-disable-next-line */}
-                            {!isMobile && <ModelCanvas /> }
+                            {rerender && !isMobile && <ModelCanvas /> }
 
                         </div>
                         
