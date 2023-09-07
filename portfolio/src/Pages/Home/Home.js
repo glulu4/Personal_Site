@@ -506,7 +506,7 @@ function Home() {
 
                     </div>
 
-                    <Textarea color={msgColor} value={message} onChange={handleMessageChange} style={{ height: '400px' }} placeholder="Message"></Textarea>
+                    <Textarea color={msgColor} value={message} onChange={handleMessageChange} style={{ height: '25rem', width: "auto" }} placeholder="Message"></Textarea>
                     <FormHelperText style={{ color: '#d32f2f', paddingLeft: '2%' }} >{msgError}</FormHelperText>
 
                     <Button
