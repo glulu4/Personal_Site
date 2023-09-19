@@ -4,6 +4,7 @@ import Model from './Model.js'
 import { Environment } from "@react-three/drei";
 import { Canvas } from '@react-three/fiber';
 
+
 function ModelCanvas(){
 
     return ( 
@@ -22,7 +23,7 @@ function ModelCanvas(){
             <directionalLight position={[5, 5, 5]} intensity={0.1}  />
 
         
-            <Model />
+                <Model />
 
             
 

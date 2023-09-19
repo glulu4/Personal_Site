@@ -1,6 +1,6 @@
 
 
-import React, { useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import IconButton from '@mui/material/IconButton';
 import { FaGithub } from 'react-icons/fa';
 import { FaLinkedin } from 'react-icons/fa';
@@ -24,6 +24,7 @@ import { isMobile } from 'react-device-detect';
 // import { json } from 'react-router-dom';
 
 import ModelCanvas from './ModelCanvas';
+import Loading from './Loading.js';
 
 
 
@@ -231,10 +232,6 @@ function Home() {
         <div className='home-container'>
             <div className='scroll-page-one'>
 
-          
-
-
-
                 <div className='name-page-container'>
                         <div className='name-div'>
                             <h1 style={{ fontSize: fontSize }} className="name">
@@ -257,7 +254,12 @@ function Home() {
                         
                         <div className='model-container'>
                              {/* // eslint-disable-next-line */}
-                            {rerender && !isMobile && <ModelCanvas /> }
+
+                                <Suspense fallback={<Loading />} >
+                                {rerender && !isMobile && <ModelCanvas />}
+
+                                </Suspense>
+
 
                         </div>
                         
