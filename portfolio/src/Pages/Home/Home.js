@@ -231,6 +231,7 @@ function Home() {
     return (
         <div className='home-container'>
             <div className='scroll-page-one'>
+                <div class="scroll-dot"></div>
 
                 <div className='name-page-container'>
                         <div className='name-div'>
@@ -275,7 +276,7 @@ function Home() {
                 </div>
 
 
-
+                
 
 
             </div>
