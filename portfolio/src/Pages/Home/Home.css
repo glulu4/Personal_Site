@@ -88,6 +88,7 @@
 
 
     background-color: #a8d0e6;
+    /* background-color:#335C67; */
 
 }
 .empty-space{
@@ -119,7 +120,7 @@
 
 .content-section {
     min-height: 100vh;
-    /* background-color: #ECECEC; */
+    background-color: #ECECEC;
     /* background: linear-gradient(to bottom, #86b3d1, #b0c4de, #ececec); */
     display: flex;
     align-items: flex-start;
@@ -127,6 +128,8 @@
     flex-direction: row;
     justify-content: space-around;
     gap: 0px;
+
+
 
 }
 

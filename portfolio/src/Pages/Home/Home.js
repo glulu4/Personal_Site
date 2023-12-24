@@ -259,7 +259,7 @@ function Home() {
                                 <Suspense fallback={<Loading />} >
                                 {rerender && !isMobile && <ModelCanvas />}
 
-                                </Suspense>
+                                </Suspense> 
 
 
                         </div>
@@ -537,8 +537,6 @@ function Home() {
                     <IconButton sx={IconButtonStyle} href='https://www.linkedin.com/in/gabriel-lulu/' target="_blank">
                         <FaLinkedin style={{ color: '#0072b1' }} />
                     </IconButton>
-
-
                 </div>
 
             </div>
